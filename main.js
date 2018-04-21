@@ -686,7 +686,7 @@ var cards = [
     cost: 8,
     instant: false,
     priority: 1,
-    desc: "Target has 0 ðŸ‘¥ Vote Strength tomorrow.",
+    desc: "Target has 0 👥 Vote Strength tomorrow.",
     effect: function(user, target) {
       target.voteStrength = -Infinity;
       target.send("You've been nullified! Your vote is worthless tomorrow!");
@@ -698,10 +698,10 @@ var cards = [
     cost: 7,
     instant: false,
     priority: 1,
-    desc: "Target loses 1 ðŸ‘¥ Vote Strength tomorrow.",
+    desc: "Target loses 1 👥 Vote Strength tomorrow.",
     effect: function(user, target) {
       target.voteStrength = -Infinity;
-      target.send("You've been rendered powerless! -1 ðŸ‘¥ Vote Strength tomorrow!");
+      target.send("You've been rendered powerless! -1 👥 Vote Strength tomorrow!");
     }
   },
   {//#50 - endorse
@@ -710,10 +710,10 @@ var cards = [
     cost: 7,
     instant: false,
     priority: 1,
-    desc: "Target gains 1 ðŸ‘¥ Vote Strength tomorrow.",
+    desc: "Target gains 1 👥 Vote Strength tomorrow.",
     effect: function(user, target) {
       target.voteStrength++;
-      target.send("You've been endorsed! +1 ðŸ‘¥ Vote Strength tomorrow!");
+      target.send("You've been endorsed! +1 👥 Vote Strength tomorrow!");
     }
   },
   {//#51 - influence
@@ -722,7 +722,7 @@ var cards = [
     cost: 8,
     instant: true,
     priority: 1,
-    desc: "+1 ðŸ‘¥ Vote Strength tomorrow.",
+    desc: "+1 👥 Vote Strength tomorrow.",
     effect: function(user) {
       user.voteStrength++;
     }
@@ -733,10 +733,10 @@ var cards = [
     cost: 0,
     instant: false,
     priority: 0,
-    desc: "Target has exactly 1 ðŸ‘¥ Vote Strength tomorrow. Overrides Nullify.",
+    desc: "Target has exactly 1 👥 Vote Strength tomorrow. Overrides Nullify.",
     effect: function(user, target) {
       target.voteStrength = -Infinity;
-      target.send("You've been equalized! Exactly 1 ðŸ‘¥ Vote Strength tomorrow!");
+      target.send("You've been equalized! Exactly 1 👥 Vote Strength tomorrow!");
     }
   },
   {//#53 - love
